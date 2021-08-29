@@ -1,0 +1,11 @@
+.filter {
+  margin-bottom: 20px;
+  padding: 6px;
+  border: 1px solid midnightblue;
+  border-radius: 5%;
+  transform: border-color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.filter:hover {
+  border-color: cornflowerblue;
+}
