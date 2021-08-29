@@ -1,16 +1,20 @@
+// Imports from React
+import React from "react";
+// Imports of helpers
 import PropTypes from "prop-types";
-import style from "./Section.module.css";
+// Styles imports
+import styles from "./Section.module.css";
 
-const Section = ({ title, children }) => {
+const Section = ({ children }) => {
   return (
-    <section className={style.section}>
-      <h1>{title}</h1>
-      {children}
+    <section>
+      <div className={styles.container}>{children}</div>
     </section>
   );
 };
 
 Section.propTypes = {
-  title: PropTypes.string.isRequired,
+  children: PropTypes.node,
 };
+
 export default Section;

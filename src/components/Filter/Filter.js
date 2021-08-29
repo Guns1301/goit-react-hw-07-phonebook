@@ -1,22 +1,47 @@
+// Imports from React
+import React from "react";
+// Imports from Redux
+import { connect } from "react-redux";
+import { updateFilter } from "../../redux/contacts-actions";
+import { getFilterValue } from "../../redux/contacts-selectors";
+// Imports of helpers
 import PropTypes from "prop-types";
-import style from "./Filter.module.css";
+// Styles imports
+import styles from "./Filter.module.css";
 
-export default function Filter({ value, onChange }) {
+const Filter = ({ filterValue, filterUpdate }) => {
   return (
-    <>
-      <input
-        className={style.filter}
-        type="text"
-        name="filter"
-        value={value}
-        onChange={onChange}
-        placeholder="Enter name to find"
-      />
-    </>
+    <div className={styles.filter}>
+      <label>
+        Find contacts by name
+        <input
+          type="text"
+          name="filter"
+          value={filterValue}
+          onChange={filterUpdate}
+          autoComplete="off"
+          required
+        />
+      </label>
+    </div>
   );
-}
+};
+
+Filter.defaultProps = {
+  filterValue: "",
+};
 
 Filter.propTypes = {
-  value: PropTypes.string,
-  handleChange: PropTypes.func,
+  filterValue: PropTypes.string,
+  filterUpdate: PropTypes.func.isRequired,
 };
+
+const mapStateToProps = (state) => ({
+  filterValue: getFilterValue(state),
+});
+
+const mapDispatchToProps = (dispatch) => ({
+  filterUpdate: (event) => dispatch(updateFilter(event.target.value)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Filter);

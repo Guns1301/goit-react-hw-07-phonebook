@@ -13,6 +13,7 @@
 5. npm install --save prop-types
 
 6. @import-normalize; - в файл index.css
+   6.1 npm i modern-normalize
 
 7. deploy on Netlify
 
@@ -38,6 +39,6 @@
 13. npm install @material-ui/core
 14. npm i @material-ui/icons
 15. npm install axios
-16. npm i modern-normalize
+16.
 17. npm i react-loader-spinner
 18. npm install

@@ -1,0 +1,29 @@
+{
+  "contacts": [
+    {
+      "name": "Boba Guns",
+      "number": "0938713001",
+      "id": 1
+    },
+    {
+      "name": "Julie Zhadan",
+      "number": "0732230931",
+      "id": 2
+    },
+    {
+      "name": "Sergey Lyalin",
+      "number": "0677098021",
+      "id": 3
+    },
+    {
+      "name": "Mama",
+      "number": "0735625683",
+      "id": 5
+    },
+    {
+      "name": "Max Yurchenko",
+      "number": "0666590487",
+      "id": 6
+    }
+  ]
+}

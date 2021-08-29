@@ -1,11 +1,21 @@
 .filter {
-  margin-bottom: 20px;
-  padding: 6px;
-  border: 1px solid midnightblue;
-  border-radius: 5%;
-  transform: border-color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  text-align: center;
 }
 
-.filter:hover {
-  border-color: cornflowerblue;
+.filter input {
+  display: block;
+
+  margin: 5px auto 30px;
+
+  max-width: 300px;
+  height: 30px;
+
+  border: 2px solid cornflowerblue;
+  border-radius: 7px;
+
+  outline: none;
+}
+
+.filter input:focus {
+  border: 2px solid midnightblue;
 }

@@ -1,0 +1,55 @@
+.form {
+  text-align: center;
+}
+
+.form input {
+  display: block;
+  margin: 5px auto 15px;
+
+  max-width: 300px;
+  height: 30px;
+
+  border: 2px solid cornflowerblue;
+  border-radius: 7px;
+
+  outline: none;
+}
+
+.form input:focus {
+  border: 2px solid midnightblue;
+}
+
+.btn {
+  width: 120px;
+  padding: 10px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  color: cornflowerblue;
+
+  border: 2px solid cornflowerblue;
+  border-radius: 7px;
+
+  background-color: transparent;
+
+  outline: none;
+
+  cursor: pointer;
+
+  transition: background-color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    transform 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}
+
+.btn:hover,
+.btn:focus {
+  color: #ffffff;
+  background-color: cornflowerblue;
+
+  outline: none;
+
+  transition: background-color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    color 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67),
+    transform 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  transform: scale(1.2);
+}
